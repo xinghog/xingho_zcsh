@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分兑换_众彩生活</title>
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/head.css">
+    <link rel="stylesheet" href="../public/css/zcsh.css">
+    <script src="../public/js/jquery-1.11.2.min.js"></script>
+    <script src="../public/js/detail.js"></script>
+    <script src="../public/plug-in/layer/layer.js"></script>
+    <script src="../js/ieif.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<header>
+    <div class="site-mast-w">
+        <div class="site-user-nav inner">
+            <ul class="basic-info fl">
+                <li class="site-mast__keep">
+                    <a href="javascript:">
+                        <i class="fa fa-star-o glob"></i>
+                        收藏众彩
+                    </a>
+                </li>
+                <li class="user-info">
+                    <!--<a href="../views/passport/log.html" class="user-info__login">登陆</a>-->
+                    <!--<a href="../views/passport/login.html" class="user-info__signup">注册</a>-->
+                    欢迎 <a href="javascript:" style="color: red;">何叶杭</a>
+                    <a href="../member/member_1.html" class="maincl">个人中心</a>
+                    <a href="" class="maincl">退出登录</a>
+                </li>
+                <li class="mobile__item">
+                    <a href="../app/app.html" class="dr_toggle">
+                        <i class="fa fa-mobile mob"></i>
+                        		手机众彩
+                    </a>
+                </li>
+            </ul>
+            <!--头部左边结束-->
+            <ul class="site-usw fr">
+                <li class="dropdown shop">
+                    <a href="javascript:" class="dropdown__toggle">
+                        <span class="shopping"></span>
+                        购物车
+                    </a>
+                    <em class="keep"></em>
+                    <div class="trolley">
+                        <div class="box">
+                            <ul>
+                                <li class="topTwo_cart_list">
+                                    <a class="jq_delete del" rel="1" href="javascript:void(0);">删除</a>
+                                    <div class="pub_img fl"><a href=""><img src="../images/thumb_57ba4e06442a1.jpg" width="80" height="60"></a></div>
+                                    <div class="pub_wz">
+                                        <p class="overflow_clear"><a href="javascript:">测试使用优惠劵商品 <span>x3</span></a></p>
+                                        <p class="price pointcl">¥387</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                            <div class="see_more">
+                                <a href="member/buy/orders.html">查看我的购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-orders">
+                    <a href="javascript:">
+                        我的订单
+                        <i class="fa fa-caret-down drp"></i>
+                    </a>
+                    <em class="keep"></em>
+                    <div class="my">
+                        <a href="javascript:">我的订单</a>
+                        <a href="javascript:">收货订单</a>
+                        <a href="javascript:">到店订单</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:" class="dropdown__toggle">
+                        我的创客
+                        <i class="fa fa-caret-down drp"></i>
+                        <i class="vertical-bar"></i>
+                    </a>
+                    <em class="keep"></em>
+                    <div class="my maker">
+                        <a href="javascript:">我推荐的创客</a>
+                        <a href="javascript:">申请服务中心</a>
+                        <a href="javascript:">创客龙虎榜</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:" class="dropdown__toggle">
+                        最近浏览
+                        <i class="fa fa-caret-down drp"></i>
+                        <i class="vertical-bar"></i>
+                    </a>
+                    <em class="keep"></em>
+                    <div class="my recently">
+                        <!--<ul>-->
+                        <!--<li>-->
+                        <!--<a href="javascript:" class="deal-link">-->
+                        <!--<img src="images/10975b99f3f0172187c252585d60f2a8438946.jpg" alt="" width="80" height="50">-->
+                        <!--</a>-->
+                        <!--<h5 class="deal-title"><a class="deal-link" href="javascript:" title="云南昭通天麻鸡2-3人餐">云南昭通天麻鸡2-3人餐</a></h5>-->
+                        <!--<a class="deal-price-w" target="_blank" href="JavaScript:"><em class="deal-price">¥58</em><span class="color-weaken">库存90</span></a>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <span class="zanwu">暂时没有浏览记录哟~</span>
+                    </div>
+                    <!--最近浏览结束-->
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:" class="dropdown__toggle">
+                        联系客服
+                        <i class="fa fa-caret-down drp"></i>
+                        <i class="vertical-bar"></i>
+                    </a>
+                    <em class="keep"></em>
+                    <div class="my service">
+                        <a href="javascript:">申请退款</a>
+                        <a href="javascript:">常见问题</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:" class="dropdown__toggle">
+                        我的店铺
+                        <i class="fa fa-caret-down drp"></i>
+                        <i class="vertical-bar"></i>
+                    </a>
+                    <em class="keep"></em>
+                    <div class="my service">
+                        <a href="javascript:">申请店铺</a>
+                        <a href="javascript:">进入店铺</a>
+                        <a href="javascript:">公司加盟</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:" class="dropdown__toggle">
+                        更多
+                        <i class="fa fa-caret-down drp"></i>
+                        <i class="vertical-bar"></i>
+                    </a>
+                    <em class="keep"></em>
+                    <div class="my more">
+                        <a href="javascript:">邮箱订阅</a>
+                        <a href="javascript:">公司简介</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--最上边的头部结束-->
+    <div class="site_branding inner">
+        <div class="site-logo fl">
+            <a href="javascript:">
+                <img src="../public/Picimg/zhongcai_03.png" alt="众彩生活网">
+            </a>
+        </div>
+        <div class="city-info">
+            <h2><a class="city-info__name" href="Javascript:">眉山</a></h2>
+            <a class="city-info__toggle" href="javascript:">切换城市</a>
+        </div>
+        <div class="so">
+            <div class="earch">
+                <form>
+                    <input class="inp" value="请输入商品名称,地址等" onclick="if (value == defaultValue) {value = '';this.style.color = '#000' }" onblur="if (!value) {value = defaultValue;this.style.color = '#999'}" type="text">
+                    <button type="submit" class="btin fr"></button>
+                </form>
+            </div>
+            <ul class="list">
+                <li><a href="Javascript:">蛋糕</a></li>
+                <li><a href="Javascript:">自助餐</a></li>
+                <li><a href="Javascript:">酒吧</a></li>
+                <li><a href="Javascript:">川菜</a></li>
+                <li><a href="Javascript:">牛排</a></li>
+                <li><a href="Javascript:">翘脚牛肉</a></li>
+                <li><a href="Javascript:">酸菜鱼</a></li>
+            </ul>
+        </div>
+        <a class="site-commitment"  href="javascript:" target="_blank">
+            <span class="commitment-item item_1">随时退</span>
+            <span class="commitment-item item_2">不满意免单</span>
+            <span class="commitment-item item_3">过期退</span>
+        </a>
+    </div>
+    <!--logo_搜索部分结束-->
+    <div class="mast_inner inner">
+        <nav class="mast_lFet fl">
+            <h2 class="classification">全部商品分类 <span class="triangle"></span></h2>
+            <div class="cate-nav">
+                <ul>
+                    <li>
+                        <a href="javascript:">美食</a><span><a href="javascript:">中餐</a></span>
+                        <em class="bord"></em>
+                        <em class="keeb"></em>
+                        <div class="menu_flklist2">
+                            <span class="keep"></span>
+                            <div class="menu_fl2t"><a title="美食" target="_blank" href="javascript:">美食</a></div>
+                            <div class="menu_fl2nr">
+                                <a title="火锅" target="_blank" href="javascript:">火锅</a>
+                                <a title="自助餐" target="_blank" href="javascript:">自助餐</a>
+                                <a title="午市套餐" target="_blank" href="javascript:">午市套餐</a>
+                                <a title="下午茶" target="_blank" href="javascript:">下午茶</a>
+                                <a title="日韩料理" target="_blank" href="javascript:">日韩料理</a>
+                                <a title="江浙菜" target="_blank" href="javascript:">江浙菜</a>
+                                <a title="西餐" target="_blank" href="javascript:">西餐</a>
+                                <a title="蛋糕" target="_blank" href="javascript:">蛋糕</a>
+                                <a title="甜品饮料" target="_blank" href="javascript:">甜品饮料</a>
+                                <a title="烤鱼" target="_blank" href="javascript:">烤鱼</a>
+                                <a title="烧烤/烤肉" target="_blank" href="javascript:">烧烤/烤肉</a>
+                                <a title="海鲜" target="_blank" href="javascript:">海鲜</a>
+                                <a title="小吃快餐" target="_blank" href="javascript:">小吃快餐</a>
+                                <a title="汤/粥/炖菜" target="_blank" href="javascript:">汤/粥/炖菜</a>
+                                <a title="聚餐宴请" target="_blank" href="javascript:">聚餐宴请</a>
+                                <a title=" 8-10人套餐" target="_blank" href="javascript:"> 8-10人套餐</a>
+                                <a title="川湘菜" target="_blank" href="javascript:">川湘菜</a>
+                                <a title="粤菜/茶餐厅" target="_blank" href="javascript:">粤菜/茶餐厅</a>
+                                <a title="西北/新疆菜" target="_blank" href="javascript:">西北/新疆菜</a>
+                                <a title="东北菜" target="_blank" href="javascript:">东北菜</a>
+                                <a title="云贵菜" target="_blank" href="javascript:">云贵菜</a>
+                                <a title="清真" target="_blank" href="javascript:">清真</a>
+                                <a title="台湾菜" target="_blank" href="javascript:">台湾菜</a>
+                                <a title="特色菜" target="_blank" href="javascript:">特色菜</a>
+                                <a title="咖啡茶馆" target="_blank" href="javascript:">咖啡茶馆</a>
+                                <a title="东南亚菜" target="_blank" href="javascript:">东南亚菜</a>
+                                <a title="京菜/鲁菜" target="_blank" href="javascript:">京菜/鲁菜</a>
+                                <a title="蟹宴" target="_blank" href="javascript:">蟹宴</a>
+                                <a title="农家土菜" target="_blank" href="javascript:">农家土菜</a>
+                                <a title="其他美食" target="_blank" href="javascript:">其他美食</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:">酒店/客栈</a><span><a href="javascript:">经济型酒店</a></span>
+                        <em class="bord"></em>
+                        <em class="keeb"></em>
+                        <div class="menu_flklist2">
+                            <span class="keep"></span>
+                            <div class="menu_fl2t"><a title="酒店/客栈" target="_blank" href="javascript:">酒店</a></div>
+                            <div class="menu_fl2nr">
+                                <a title="火锅" target="_blank" href="javascript:">经济/客栈</a>
+                                <a title="自助餐" target="_blank" href="javascript:">三星/舒适</a>
+                                <a title="午市套餐" target="_blank" href="javascript:"> 四星/精品</a>
+                                <a title="下午茶" target="_blank" href="javascript:">五星/豪华</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:">旅游</a><span><a href="javascript:">景点门票</a></span>
+                        <em class="bord"></em>
+                        <em class="keeb"></em>
+                        <div class="menu_flklist2">
+                            <span class="keep"></span>
+                            <div class="menu_fl2t"><a title="旅游" target="_blank" href="javascript:">旅游</a></div>
+                            <div class="menu_fl2nr">
+                                <a title="火锅" target="_blank" href="javascript:">景点门票</a>
+                                <a title="自助餐" target="_blank" href="javascript:">当地/周边游</a>
+                                <a title="午市套餐" target="_blank" href="javascript:">国内游</a>
+                                <a title="下午茶" target="_blank" href="javascript:">出境游</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:">休闲</a><span><a href="javascript:">温泉</a><a href="javascript:">桑拿</a></span>
+                        <em class="bord"></em>
+                        <em class="keeb"></em>
+                        <div class="menu_flklist2">
+                            <span class="keep"></span>
+                            <div class="menu_fl2t"><a title="休闲" target="_blank" href="javascript:">休闲</a></div>
+                            <div class="menu_fl2nr">
+                                <a title="KTV" target="_blank" href="javascript:">KTV</a>
+                                <a title="温泉" target="_blank" href="javascript:">温泉</a>
+                                <a title="滑雪" target="_blank" href="javascript:">滑雪</a>
+                                <a title="公园/游乐园" target="_blank" href="javascript:">公园/游乐园</a>
+                                <a title="景点/郊游" target="_blank" href="javascript:">景点/郊游</a>
+                                <a title="密室逃脱" target="_blank" href="javascript:">密室逃脱</a>
+                                <a title="桌游/电玩/网吧" target="_blank" href="javascript:">桌游/电玩/网吧</a>
+                                <a title="酒吧" target="_blank" href="javascript:">酒吧</a>
+                                <a title="足疗按摩" target="_blank" href="javascript:">足疗按摩</a>
+                                <a title="洗浴/汗蒸" target="_blank" href="javascript:">洗浴/汗蒸</a>
+                                <a title="电影" target="_blank" href="javascript:">电影</a>
+                                <a title="私人影院" target="_blank" href="javascript:">私人影院</a>
+                                <a title="4D/5D电影" target="_blank" href="javascript:">4D/5D电影</a>
+                                <a title="演出/赛事/展览" target="_blank" href="javascript:">演出/赛事/展览</a>
+                                <a title="DIY手工" target="_blank" href="javascript:">DIY手工</a>
+                                <a title="真人CS/卡丁车" target="_blank" href="javascript:">真人CS/卡丁车</a>
+                                <a title="农家乐/采摘" target="_blank" href="javascript:">农家乐/采摘</a>
+                                <a title="运动健身" target="_blank" href="javascript:">运动健身</a>
+                                <a title="游泳" target="_blank" href="javascript:">游泳</a>
+                                <a title="轰趴馆" target="_blank" href="javascript:">轰趴馆</a>
+                                <a title="水上乐园" target="_blank" href="javascript:">水上乐园</a>
+                                <a title="亲子游玩" target="_blank" href="javascript:">亲子游玩</a>
+                                <a title="更多" target="_blank" href="javascript:">更多</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:">生活服务</a><span><a href="javascript:">家政服务</a></span>
+                        <em class="bord"></em>
+                        <em class="keeb"></em>
+                        <div class="menu_flklist2">
+                            <span class="keep"></span>
+                            <div class="menu_fl2t"><a title="生活服务" target="_blank" href="javascript:">生活服务</a></div>
+                            <div class="menu_fl2nr">
+                                <a title="汽车服务" target="_blank" href="javascript:">汽车服务</a>
+                                <a title="体检保健" target="_blank" href="javascript:">体检保健</a>
+                                <a title="培训课程" target="_blank" href="javascript:">培训课程</a>
+                                <a title="鲜花婚庆" target="_blank" href="javascript:">鲜花婚庆</a>
+                                <a title="照片冲印" target="_blank" href="javascript:">照片冲印</a>
+                                <a title="家具建材" target="_blank" href="javascript:">家具建材</a>
+                                <a title="装修设计" target="_blank" href="javascript:">装修设计</a>
+                                <a title="婚纱摄影" target="_blank" href="javascript:">婚纱摄影</a>
+                                <a title="个性写真" target="_blank" href="javascript:">个性写真</a>
+                                <a title="儿童摄影" target="_blank" href="javascript:">儿童摄影</a>
+                                <a title="母婴亲子" target="_blank" href="javascript:">母婴亲子</a>
+                                <a title="服装洗护" target="_blank" href="javascript:">服装洗护</a>
+                                <a title="宠物服务" target="_blank" href="javascript:">宠物服务</a>
+                                <a title="家政服务" target="_blank" href="javascript:">家政服务</a>
+                                <a title="配眼镜" target="_blank" href="javascript:">配眼镜</a>
+                                <a title="商场购物券" target="_blank" href="javascript:">商场购物券</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:">百货</a><span><a href="javascript:">手机数码</a></span>
+                        <em class="bord"></em>
+                        <em class="keeb"></em>
+                        <div class="menu_flklist2">
+                            <span class="keep"></span>
+                            <div class="menu_fl2t"><a title="百货" target="_blank" href="javascript:">百货</a></div>
+                            <div class="menu_fl2nr">
+                                <a title="服饰鞋包" target="_blank" href="javascript:">服饰鞋包</a>
+                                <a title="生活家居" target="_blank" href="javascript:">生活家居</a>
+                                <a title="食品饮料" target="_blank" href="javascript:">食品饮料</a>
+                                <a title="母婴用品" target="_blank" href="javascript:">母婴用品</a>
+                                <a title="数码家电" target="_blank" href="javascript:">数码家电</a>
+                                <a title="个护化妆" target="_blank" href="javascript:">个护化妆</a>
+                                <a title="钟表眼镜" target="_blank" href="javascript:">钟表眼镜</a>
+                                <a title="水果生鲜" target="_blank" href="javascript:">水果生鲜</a>
+                                <a title="影音书刊" target="_blank" href="javascript:">影音书刊</a>
+                                <a title="珠宝饰品" target="_blank" href="javascript:">珠宝饰品</a>
+                                <a title="其他" target="_blank" href="javascript:">其他</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="javascript:">KTV</a></li>
+                    <li>
+                        <a href="javascript:">生活家电</a>
+                        <em class="bord"></em>
+                        <em class="keeb"></em>
+                        <div class="menu_flklist2">
+                            <span class="keep"></span>
+                            <div class="menu_fl2t"><a title="生活家电" target="_blank" href="javascript:">生活家电</a></div>
+                            <div class="menu_fl2nr">
+                                <a title="服饰鞋包" target="_blank" href="javascript:">电视</a>
+                                <a title="生活家居" target="_blank" href="javascript:">空调</a>
+                                <a title="食品饮料" target="_blank" href="javascript:">洗衣机</a>
+                                <a title="母婴用品" target="_blank" href="javascript:">冰箱</a>
+                                <a title="数码家电" target="_blank" href="javascript:">厨卫大电</a>
+                                <a title="个护化妆" target="_blank" href="javascript:">厨卫小电</a>
+                                <a title="钟表眼镜" target="_blank" href="javascript:">个护健康</a>
+                                <a title="水果生鲜" target="_blank" href="javascript:">家庭影音</a>
+                                <a title="影音书刊" target="_blank" href="javascript:">进口电器</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="javascript:">川菜</a></li>
+                    <li><a href="javascript:">火锅</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="mast_riGht">
+            <ul>
+                <li class="home"><a href="../index.html">首页</a></li>
+                <li><a href="../views/jinrixinpin.html">今日新品</a></li>
+                <li><a href="../views/shangjiahuodong.html">商家活动</a></li>
+                <li><a href="../views/remen.html">热门推荐</a></li>
+                <li><a href="../views/jifenshangcheng.html">积分商城</a></li>
+                <li><a href="../views/zhekou.html">折扣商城</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--通用头部end-->
+<div class="mein inner">
+    <div class="spxq_loca">
+        <a href="javascript:">首页</a>&gt;&gt;
+        <a href="javascript:">积分</a>&gt;&gt;
+        <a href="javascript:">企鹅</a>
+    </div>
+    <div class="spxq_xqgm">
+        <div class="nav clearfix">
+            <div class="nav_pic">
+                <a href="javascript:"><img src="../images/8601a18b87d6277f8857ff6e20381f30e924fc1b.jpg" alt="7店通用三河酒家"></a>
+            </div>
+            <div class="spxq_qg_r fl hdxq_qg_r">
+                <p class="jfxq_pj"><span class="spxq_qgpstarBg"><span class="spxq_qgpstar spxq_qgpstar45"></span></span>16人评价</p>
+                <div class="spxq_qgjgk">
+                    <p class="hdxq_p">积分价：<span class="jfxq_jfj" >1500</span>
+                    <span class="jfxq_scj">市场价：<del>￥25</del></span></p>
+                </div>
+                <div class="spxq_qgjgk"><p class="hdxq_p">商家：宽大摄影</p></div>
+                <div class="spxq_qgjgk"><p class="hdxq_p">库存：有<span class="jfxq_kcy">剩余：989</span></p></div>
+                <div class="hdsy_Licj">
+                    <a onclick="javascript:$('.dhPop_mask').show();" class="spxq_qgjjKk">立即兑换</a>
+                </div>
+                <div class="mask_box dhPop_mask" >
+                    <div class="dhPop">
+                        <h2><span class="bao_closed"></span>积分兑换</h2>
+                        <form method="post" target="baocms_frm" action="javascript:">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tbody class="jq_exchange_addr">
+                                <tr>
+                                    <td align="right">地区：</td>
+                                    <td>
+                                        <select name="data[area_id]" id="area_id" class="dhInput">
+                                            <option value="0">请选择...</option>
+                                            <option value="1">东坡</option>
+                                            <option value="2">青神</option>
+                                            <option value="3">洪雅</option>
+                                            <option value="4">彭山</option>
+                                            <option value="5">仁寿</option>
+                                        </select>
+
+                                        <select name="data[business_id]" id="business_id" class="dhInput">
+                                            <option value="0">请选择...</option>
+                                            <option value="1">老城区</option>
+                                            <option value="2">新城区</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">收货地址：</td>
+                                    <td><input name="data[addr]" class="dhInput dhInput2" value="" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">收货人：</td>
+                                    <td><input name="data[name]" class="dhInput" value="" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">联系电话：</td>
+                                    <td><input name="data[mobile]" class="dhInput" value="" type="text"></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td align="right"></td>
+                                    <td><input style="cursor: pointer; margin-bottom: 20px;" class="subBtn" value="确认兑换" type="submit"></td>
+                                </tr>
+                                </tbody></table>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+    <div class="spxqBox">
+        <div class="spxq_xqT">
+            <ul class="spxq_Tt">
+                <li class="li1 on"><code rel="spxq_xqBt1">商家详情</code><em></em></li>
+                <li><code rel="spxq_xqBt2">商品详情</code><em></em></li>
+            </ul>
+        </div>
+        <div class="spxq_xqBt1">
+            <div class="spxq_xqBt">店铺地图</div>
+            <div class="spxq_xqNr">
+                <div class="fl spxq_xqMap_l">
+                    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=7b92b3afff29988b6d4dbf9a00698ed8"></script>
+                    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=7b92b3afff29988b6d4dbf9a00698ed8&amp;services=&amp;t=20160921171822"></script>
+                    <div id="allmap" style="width: 384px; height: 300px; overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;"></div>
+                    <div class="map_icon">
+                        <img src="../public/iocn/mapIco.png">
+                    </div>
+                    <div class="map_fixed">
+                        <div class="map_fixed_tit">
+                            <span>查看地图</span>
+                            <a href="javascript:;" title="关闭" class="close">×</a>
+                        </div>
+                        <div class="map_fixed_box">
+                            <div id="allmap2" style="width: 700px; height: 430px; overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;"></div>
+                        </div>
+                        <p class="zhu">注：地图位置坐标仅供参考，具体情况以实际道路标识信息为准</p>
+                    </div>
+                </div>
+                <div class="fl spxq_xqMap_r">
+                    <div class="spxq_xqMapList fl">
+                        <ul>
+                            <li id="li_1" class="on">总店</li>
+                            <li id="li_2">大东门店</li>
+                        </ul>
+                    </div>
+                    <div class="fl" style="width:356px;">
+                        <div class="spxq_xqMapListNr" style="display: block">
+                            <table class="spxq_table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td colspan="2"><p class="spxq_xqMapT">皮阿诺橱柜（总店）</p></td>
+                                </tr>
+                                <tr>
+                                    <td width="50"><p class="spxq_tabT">评价：</p></td>
+                                    <td><a class="" href="javascript:void(0);">4人评价</a></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="spxq_tabT">地址：</p></td>
+                                    <td><p class="spxq_xqMapWz">圣大国际1709</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="spxq_tabT">电话：</p></td>
+                                    <td><p class="spxq_xqMapWz">400-5879416</p></td>
+                                </tr>
+                                </tbody></table>
+                        </div>
+                        <div class="spxq_xqMapListNr">
+                            <table class="spxq_table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody><tr>
+                                    <td colspan="2"><p class="spxq_xqMapT">皮阿诺橱柜（大东门）</p></td>
+                                </tr>
+                                <tr>
+                                    <td width="50"><p class="spxq_tabT">评价：</p></td>
+                                    <td><a class="" href="javascript:void(0);">4人评价</a></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="spxq_tabT">地址：</p></td>
+                                    <td><p class="spxq_xqMapWz">圣大国际1709</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="spxq_tabT">电话：</p></td>
+                                    <td><p class="spxq_xqMapWz">400-5879416</p></td>
+                                </tr>
+                                </tbody></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spxq_xqBt2">
+            <div class="spxq_xqBt">购买须知</div>
+            <dl class="deal-term">
+                <dt>有效期</dt>
+                <dd>2015.10.28 至 2016.10.27（周末、法定节假日通用）</dd>
+                <dt>预约提醒</dt>
+                <dd>无需预约，消费高峰时可能需要等位</dd>
+                <dt id="yui_3_16_0_1_1474533883691_2352">限购限用提醒</dt>
+                <dd>每张美团券最多1位成人使用，身高1.2米以上儿童计入人数</dd>
+                <dt>温馨提示</dt>
+                <dd>浪费超过200g，加收30元！
+                    团购用户不可同时享受商家其他优惠
+                    部分菜品因时令原因有所不同，请以店内当日实际供应为准</dd><dt>商家服务</dt><dd>提供免费WiFi
+                停车位收费标准：详情请咨询商家</dd>
+            </dl>
+        </div>
+        <p class="deal-menu-summary">
+            价值:
+            <span class="inline-block worth">¥45</span>
+            众彩价:
+            <span class="inline-block worth price">¥33.8</span>
+        </p>
+        <p class="standard-bar">商品详情</p>
+        <div class="standard-content">
+            <div class="standard-content-title"><strong>荤菜</strong>：鸡翅、牛肉、鸭肠、排骨、五花、掌中宝</div>
+            <img class="lazy" data-src="../images/72a5a6ba2290b6a446a981ae57daae0f351783.jpg@PC.jpg">
+            <img class="lazy" data-src="../images/13cb650d93c850464777e8e1f9467f47227098.jpg@PC.jpg">
+        </div>
+
+    </div>
+</div>
+<!--底部开始-->
+<footer>
+    <div class="footer clearfix">
+        <div class="inner clearfix">
+            <ul class="mode_wrap fl clearfix">
+                <li class="mode">
+                    <h3><a href="javascript:" target="_blank">新手上路</a></h3>
+                    <ul class="cont">
+                        <li class="cont_list">
+                            <a  href="javascript:" target="_blank" >新用户演示</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank">会员积分计划</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank" >会员等级规则</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank">售后服务政策</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mode">
+                    <h3><a href="javascript:" target="_blank">付款方式</a></h3>
+                    <ul class="cont">
+                        <li class="cont_list">
+                            <a  href="javascript:" target="_blank" >支付方式</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank">支付常见问题</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank" >激活礼品卡</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank">众彩币</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank">电子礼品卡说明及使用</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mode">
+                    <h3><a href="javascript:" target="_blank">关于我们</a></h3>
+                    <ul class="cont">
+                        <li class="cont_list">
+                            <a  href="javascript:" target="_blank" >联系我们</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank">人才招聘</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank" >免责声明</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mode">
+                    <h3><a href="javascript:" target="_blank">商户合作</a></h3>
+                    <ul class="cont">
+                        <li class="cont_list">
+                            <a  href="javascript:" target="_blank" >商家入驻</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank">广告合作</a>
+                        </li>
+                        <li class="cont_list">
+                            <a href="javascript:" target="_blank" >商家后台</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="ervma fr clearfix">
+                <i class="hotline" id="yui_3_16_0_1_1475035048872_10645"></i>
+                <p class="contact-name">客服电话</p>
+                <p class="contact-info">
+                    <span class="contact-numbers">10107888</span>
+                    <span class="contact-time">(9:00-23:00)</span>
+                </p>
+            </div>
+        </div>
+        <div class="about_wrap">
+            <div class="inner">
+                <div class="links">
+                    <a href="javascript:" target="_blank">关于我们</a><span>|</span>
+                    <a href="javascript:" target="_blank">免责条款</a><span>|</span>
+                    <a href="javascript:" target="_blank">众彩集团</a><span>|</span>
+                    <a href="javascript:" target="_blank">友情链接</a><span>|</span>
+                    <a href="javascript:" target="_blank">搜索热词</a><span>|</span>
+                    <a href="javascript:" target="_blank">实物购物券</a><span>|</span>
+                    <a href="javascript:" target="_blank">客服电话：400-005-5678</a></div>
+            </div>
+            <ul  class="cert">
+                <li class="cert__item"><a class="sp-ft--record" title="备案信息" href="javascript:" target="_blank"></a></li>
+                <li class="cert__item"><a class="sp-ft--knet"  href="javascript:" target="_blank" title="可信网站认证"></a></li>
+                <li class="cert__item"><a class="sp-ft--12315" href="javascript:" target="_blank" title="12315消费争议"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--底部结束-->
+<div class="Top">
+    <a href="javascript:" class="go-top-2">
+        <span class="inner-ico">
+        </span>
+    </a>
+    <a href="javascript:" class="e_app">
+        <span class="erwei">
+        </span>
+        <div class="er_APP">
+            <img src="../public/Picimg/qr-code-text-discount-1x_8c8fa4c.jpg" alt="扫描下载众彩APP">
+        </div>
+    </a>
+    <a href="javascript:">
+        <span class="wenquan">
+
+        </span>
+    </a>
+</div>
+<!--返回顶部-->
+</body>
+</html>
+<script type="text/javascript" language="javascript">
+    $('.bao_closed').click(function(){
+        $('.mask_box').hide();
+    })
+    $('.spxq_xqT li').click(function(){
+        v = $(this).attr('v');
+        $('.spxq_xqT li').removeClass('on');
+        $(this).addClass('on');
+        $('#l1').hide();$('#ll1').hide();$('#l2').hide();$('#ll2').hide();
+        $('#l'+v).show();
+        $('#ll'+v).show();
+    })
+</script>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>众彩生活_用户注册</title>
+    <link rel="stylesheet" href="../../public/css/base.css">
+    <link rel="stylesheet" href="../../css/newstyle.css">
+    <script type="text/javascript" src="../../public/js/jquery-1.11.2.min.js"></script>
+    
+</head>
+<body>
+<header>
+<div class="login_left clearfix">
+    <div class="logo">
+        <a href="javascript:"><img src="../../public/Picimg/zhongcai_03.png" alt="众彩生活"></a>
+    </div>
+    <div class="proven fr">
+    <span>已有众彩账号？</span>
+        <a href="log.html" class="log">登陆</a>
+    </div>
+</div>
+</header>
+<div class="content clearfix ">
+    <div class="log_mein_left">
+        <form>
+            <div></div>
+            <div class="pass_username">
+                <span class="title">手机号</span>
+                <input type="text" name="pass" class="pass-text-input-userName" id="phon">
+                <div class="error">
+                    <p><span></span>请输入您的手机号</p>
+                </div>
+                <div class="error_cu">
+                    <p><span></span>请输入正确的11位手机号码</p>
+                </div>
+                <div class="correct"></div>
+            </div>
+            <div class="verify">
+                <input type="button" id="btn" value="免费获取验证码" class="verification" />
+            </div>
+            <div class="pass_username">
+                <span class="title">验证码</span>
+                <input type="text"  name="pass" class="pass-text-input-userName" id="verification">
+                <div class="error">
+                    <p><span></span>请输入6位数字的验证码</p>
+                </div>
+                <div class="error_cu">
+                    <p><span></span>验证码输入不正确，请重新输入</p>
+                </div>
+                <div class="correct"></div>
+            </div>
+            <div class="pass_username">
+                <span class="title">密码</span>
+                <input type="password"  name="pass" class="pass-text-input-userName" id="tbPassword" maxlength="14">
+                <div class="friendship pass">
+                    <p>长度为6~14个字符</p>
+                    <p>支持数字,大小字母和标点符号</p>
+                    <p>不允许有空格</p>
+                    <span class="sj"></span>
+                </div>
+                <div class="error">
+                    <p><span></span>请设置您的密码</p>
+                </div>
+                <div class="error_cu">
+                    <p><span></span>密码太短啦~增加下强度以防小偷</p>
+                </div>
+                <div class="correct"></div>
+            </div>
+            <div class="pass_username">
+                <span class="title">确认密码</span>
+                <input type="password" name="pass" class="pass-text-input-userName" id="affirm">
+                <div class="error">
+                    <p><span></span>请再次确认密码</p>
+                </div>
+                <div class="error_cu">
+                    <p><span></span>两次密码不一致，请重新输入</p>
+                </div>
+                <div class="correct"></div>
+            </div>
+            <p class="pass-form-item-isAgree">
+                <input name="isAgree"  checked="checked" class="pass-checkbox-isAgree" type="checkbox">
+                <label>阅读并接受</label>
+                <a target="_blank" href="http://passport.baidu.com/static/passpc-account/html/protocal.html">《众彩用户协议》</a>
+            </p>
+            <div class="item-submit">
+                <input type="button" class="btn_submit" value="确认并注册">
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(function(){
+        $("input[name='pass']").on("click",function(){
+            $(this).addClass("border").parent().siblings().find("input[name='pass']").removeClass("border");
+        })
+        $("#phon").on("blur",function(){
+            var mobile=$(this).val();
+            if(mobile==""){
+                $(this).css("border","1px solid red").next("div.error").show();
+            }else if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(mobile)){
+                $(this).css("border","1px solid red").siblings("div.error,div.correct").hide().next(".error_cu").show();
+            }else {
+                $(this).css("border","1px solid #1e89e0").siblings("div.error,div.error_cu").hide().next("div.correct").show();
+                $("#btn").click(function(){
+                    settime(this)
+                })
+            }
+        })
+//        手机正则
+        $("#verification").on("blur",function(){
+            var value=$(this).val();
+            var tel=123456;
+            if(value==""){
+                $(this).css("border","1px solid red").next("div.error").show();
+            }else if(value != tel){
+                $(this).css("border","1px solid red").siblings("div.error").hide().next("div.error_cu").show();
+            }else if(value==tel){
+                $(this).css("border","1px solid #1e89e0").siblings("div.error,div.error_cu").hide().next("div.correct").show();
+            };
+        });
+//验证码
+        $("#affirm").on("blur",function(){
+            if($(this).val()==""){
+                $(this).css("border","1px solid red").siblings("div.error").show();
+            }else if($(this).val() == $("#tbPassword").val()){
+                $(this).css("border","1px solid #1e89e0").siblings("div.error,div.error_cu").hide().next("div.correct").show()
+            }
+        })
+
+    })
+</script>
+</body>
+</html>
+<script>
+    var countdown=60;
+    function settime(obj) {
+        if (countdown == 0) {
+            obj.removeAttribute("disabled");
+            obj.value="免费获取验证码";
+            countdown = 60;
+            return;
+        } else {
+            obj.setAttribute("disabled", true);
+            obj.value="重新发送(" + countdown + ")";
+            countdown--;
+        }
+        setTimeout(function() {settime(obj) },1000)
+    }
+</script>
